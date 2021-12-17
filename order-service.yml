@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    username: root
+    username: "{cipher}34a85e9cb156a32b3322b38b3ffbe825eb984783cf348d6a4643ff220e70dcad"
     password:
     url: jdbc:mysql://localhost:3306/order-service
   jpa:
@@ -12,5 +12,9 @@ spring:
       ddl-auto: update
     show-sql: true
 
+eureka:
+  client:
+    service-url:
+      default-zone: "{cipher}4dffb15ea36431fff44a2e16f80ba53fa4480c611ffd772b2a2101e5771940ed04773d8ac79c22df7eac4c8b221d6892"
 server:
   port: 0
